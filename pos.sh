@@ -13,6 +13,7 @@ git clone https://github.com/hefatss/local_manifests -b pos-topaz .repo/local_ma
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
+export INLINE_KERNEL_BUILDING=true
 lunch aosp_topaz-ap1a-userdebug
 make installclean
 make bacon
