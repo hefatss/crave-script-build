@@ -14,6 +14,6 @@ git clone https://github.com/hefatss/local_manifests -b evox .repo/local_manifes
 /opt/crave/resync.sh
 . build/envsetup.sh
 lunch lineage_topaz-userdebug
-make installclean
 export INLINE_KERNEL_BUILDING=true
+export ALLOW_MISSING_DEPENDENCIES=true
 m evolution
