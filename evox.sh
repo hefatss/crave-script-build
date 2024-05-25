@@ -6,14 +6,14 @@ export USE_CCACHE=1
 
 rm -rf .repo/local_manifests/
 #repo init rom
-repo init -u https://github.com/hefatss/PixelOS-Manifest.git -b fourteen-Bengal_515 --git-lfs
+repo init -u https://github.com/hefatss/manifest_evox -b udc-bengal-5.15 --git-lfs
 #Local manifests
-git clone https://github.com/hefatss/local_manifests -b pos-topaz .repo/local_manifests
+git clone https://github.com/hefatss/local_manifests -b evox .repo/local_manifests
 
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-lunch aosp_topaz-ap1a-userdebug
+lunch lineage_topaz-userdebug
 make installclean
 export INLINE_KERNEL_BUILDING=true
-make bacon
+m evolution
