@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export BUILD_USERNAME=hefatss
-export BUILD_HOSTNAME=arch
+export BUILD_HOSTNAME=ubuntu
 
 rm -rf .repo/local_manifests/
 #repo init rom
