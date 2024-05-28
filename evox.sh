@@ -11,6 +11,7 @@ git clone https://github.com/hefatss/local_manifests -b evox .repo/local_manifes
 
 #build
 /opt/crave/resync.sh
+git clone https://github.com/hefatss/vendor_sign-priv -b evox vendor/evolution-priv
 . build/envsetup.sh
 lunch lineage_topaz-userdebug
 export INLINE_KERNEL_BUILDING=true
