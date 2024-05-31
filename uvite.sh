@@ -1,14 +1,13 @@
 #!/bin/bash
 
 export BUILD_USERNAME=hefatss
-export BUILD_HOSTNAME=arch
-export USE_CCACHE=1
+export BUILD_HOSTNAME=ubuntu
 
-rm -rf .repo/local_manifests/
 #repo init rom
-repo init -u https://github.com/hefatss/manifest_aospa -b uvite-bengal-5.15
+repo init -u https://github.com/AOSPA/manifest -b uvite
 
 #build
 /opt/crave/resync.sh
-#export INLINE_KERNEL_BUILDING=true
+rm -rf vendor/aospa
+git clone https://github.com/topazfucker/vendor_aospa.git -b uvite vendor/aospa
 ./rom-build.sh topaz
