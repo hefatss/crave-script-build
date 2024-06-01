@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 #repo init rom
 repo init -u https://github.com/hefatss/PixelOS-Manifest -b bengal_515 --git-lfs
 #Local manifests
-git clone https://github.com/hefatss/local_manifests -b pos .repo/local_manifests
+git clone https://github.com/hefatss/local_manifests -b pos-topaz .repo/local_manifests
 
 #build
 /opt/crave/resync.sh
