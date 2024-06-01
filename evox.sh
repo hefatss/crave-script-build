@@ -5,7 +5,7 @@ export BUILD_HOSTNAME=ubuntu
 
 rm -rf .repo/local_manifests/
 #repo init rom
-repo init -u https://github.com/hefatss/manifest_evox -b udc-bengal-5.15 --git-lfs
+repo init -u https://github.com/hefatss/manifest_evox -b bengal_515 --git-lfs
 #Local manifests
 git clone https://github.com/hefatss/local_manifests -b evox .repo/local_manifests
 
