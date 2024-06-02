@@ -16,6 +16,9 @@ else
 fi
 
 # Custom
+rm -rf frameworks/base
+git clone https://github.com/hefatss/frameworks_base-pos.git -b fourteen frameworks/base --depth=1
+
 rm -rf vendor/extra
 git clone https://github.com/shravansayz/vendor_extra -b master vendor/extra
 
