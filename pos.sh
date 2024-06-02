@@ -22,6 +22,9 @@ git clone https://github.com/hefatss/frameworks_base-pos.git -b fourteen framewo
 rm -rf vendor/extra
 git clone https://github.com/shravansayz/vendor_extra -b master vendor/extra
 
+rm -rf vendor/aosp/signing
+git clone https://github.com/hefatss/vendor_sign-priv.git -b pos vendor/aosp/signing
+
 # Run Build
 . build/envsetup.sh
 lunch aosp_topaz-ap1a-userdebug
